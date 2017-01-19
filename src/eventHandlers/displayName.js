@@ -1,6 +1,10 @@
 export default function displayName(e) {
     let div = e.target.parentElement;
 
+    if (div.classList.contains("hover")) {
+        div = div.parentElement
+    }
+
     if (div.nextSibling) {
         div.nextSibling.classList.contains("Child") ? show(div) : hide(div.parentElement)
     }
@@ -19,7 +23,7 @@ function show(div) {
 
 function hide(div) {
     let hideList = [];
-    Array.prototype.forEach.apply(div.getElementsByClassName("Padded"), (elem) => hideList.push(elem))
+    Array.prototype.forEach.call(div.getElementsByClassName("Padded"), (elem) => hideList.push(elem))
     hideList.forEach(elem => {
         elem.classList.remove("Padded")
         elem.classList.add("Child")

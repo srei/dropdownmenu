@@ -6,7 +6,7 @@ let Category = ({name, children, id}) => {
     return (
         <div> 
             <ul>
-                <Children key={id} name={name} children={children}/>
+                <Children key={id} name={name} children={children} id={id}/>
             </ul>
         </div>
     );

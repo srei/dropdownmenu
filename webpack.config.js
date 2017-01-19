@@ -8,7 +8,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, '/src/bundle/'),
-    filename: 'bundle.js',
+    filename: 'app.js',
     publicPath: 'http://localhost:9090/src/bundle/',
   },
   resolve: {
@@ -21,5 +21,11 @@ module.exports = {
       exclude: /node_modules/,
     },
     ],
-  }
+  },
+  plugins: [
+   new webpack.DefinePlugin({
+     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+   }),
+   new webpack.NoErrorsPlugin(),
+ ]
 };

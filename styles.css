@@ -1,0 +1,57 @@
+#one {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+
+.top {
+    border-top: 1px solid grey;
+}
+
+.bottom {
+    border-bottom: 1px solid grey;
+    
+}
+
+.wrap {
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    width: 180px;
+    font-family: "Proxima Nova";
+    max-height: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Child {
+    display: none;
+}
+
+.hover {
+    position: relative;
+    text-indent: .5em;
+}
+
+.hover:hover {
+    background: #f5f3f1;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    display: flex;
+}
+
+span {
+    font-size: 11px;
+    position: absolute;
+    top: 25%;
+    right: 12px;
+}
