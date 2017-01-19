@@ -24,4 +24,4 @@ To run app locally:
  localhost:9090
  ```
  
-![alt text](assets/DropDown.png)
+![alt text](assets/Dropdown.png)
