@@ -2,10 +2,6 @@
 
 Simple dropdown built with React & React-Redux
 
-Install nodemon: 
-```
-npm install -g nodemon
-```
 To run app locally: 
  Install Packages: 
  ```
